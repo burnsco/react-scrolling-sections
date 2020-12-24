@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - '14'
+
+cache:
+  directories:
+    - ~/.npm
+    - ~/.cache
+
+install:
+  - yarn
+
+script:
+  - yarn lint
+  - yarn test:ci
+  - yarn build
+  - yarn build:demo

@@ -1,0 +1,58 @@
+{
+  "name": "react-scrolling-sections",
+  "version": "1.0.0",
+  "description": "React library to provide a declarative scrolling  between sections",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start": "nwb serve-react-demo",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "build:demo": "nwb build-demo",
+    "prebuild": "yarn clean",
+    "build": "tsc",
+    "prepublish": "yarn build",
+    "lint": "yarn eslint . --ext .ts,.tsx",
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "test:ci": "start-server-and-test 3000"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-toggle": "^4.0.2",
+    "@types/smoothscroll-polyfill": "^0.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "babel-eslint": "^10.0.1",
+    "cypress": "^6.2.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.11.1",
+    "nwb": "0.25.x",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-toggle": "^4.0.2",
+    "start-server-and-test": "^1.11.0",
+    "ts-loader": "^8.0.12",
+    "typescript": "^4.1.3"
+  },
+  "author": "Corey Burns",
+  "license": "MIT",
+  "repository": "https://github.com/burnsco/react-scrolling-sections",
+  "keywords": [
+    "react-component",
+    "scroll",
+    "scrolling",
+    "section",
+    "declarative"
+  ],
+  "dependencies": {
+    "smoothscroll-polyfill": "^0.4.4"
+  }
+}
